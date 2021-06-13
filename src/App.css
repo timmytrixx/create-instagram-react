@@ -1,0 +1,304 @@
+/* @import "./styles/_properties.scss";/ */
+
+/* * {
+  box-sizing: border-box;
+  
+}
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Montserrat", san-serif;
+  min-width: fit-content;
+  font-size: 18px;
+  display: block;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.container {
+  padding: 1em 0 1em 0;
+  display:flex;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 0 1em;
+  width: 100px;
+  cursor: pointer;
+}
+
+.search {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  min-width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIcon {
+  width: 10px;
+  opacity: 0.4;
+  margin-right: 0.3em;
+}
+
+.searchText {
+  color: #8e8e8e;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  /* padding-right: 1.5em; */
+}
+
+.icon {
+    margin-right: 1.5em;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.profileIcon {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: block;
+  cursor: pointer;
+  margin-top: 0.5px;
+}
+
+.small {
+    width: 25px;
+    height: 25px;
+}
+
+.medium {
+    width: 35px;
+    height: 35px;
+}
+
+.big {
+    width: 60px;
+    height: 60px;
+}
+
+.storyBorder {
+  padding: 2.5px;
+  /* margin-top: -3px; */
+  background: linear-gradient(
+    200deg,
+    #da3394 25%,
+    #e03c67 50%,
+    #f3753b 75%,
+    #f99b4a 100%
+  );
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: #0095f6;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.stories {
+  display: flex;
+  align-content: center;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin: 2.5em 0 1.5em 0;
+  height: 7.4em;
+  overflow: hidden;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0.5em;
+
+  /* &:first-child {
+    margin-left: 1em;
+  }
+
+  &:last-child {
+    margin-right: 1em;
+  } */
+}
+
+.accountName {
+  font-size: 0.65em;
+  margin: 0.4em;
+}
+
+.cards {
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin-bottom: 0.85em;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    min-width: 180px;
+}
+
+.caption {
+      color: #8e8e8e;
+}
+
+.sidebar {
+  width: 320px;
+  padding: 5em 2em 0 2em;
+}
+
+.footer {
+  color: #c7c7c7;
+  font-size: 0.7em;
+  margin-top: 2em;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+li:after {
+  content: "\2022";
+  margin: 0 0.25em 0 0.25em;
+}
+
+li:last-child:after {
+  content: "";
+}
+
+
+.card {
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  margin-bottom: 3.5em;
+  border-radius: 3px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em;
+}
+
+.profile {
+  margin-bottom: 0;
+}
+
+.Option {
+  height: 30px;
+  cursor: pointer;
+
+}
+
+.cardImage {
+  width: 100%;
+  display: block;
+}
+
+.likedBy {
+  display: flex;
+  padding-left: 0.75em;
+}
+
+span {
+  font-size: 0.75em;
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+.comments {
+  margin-bottom: 0.75em;
+}
+
+.timePosted {
+  font-size: 0.6em;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  color: #8e8e8e;
+  border-bottom: 1px solid #efefef;
+}
+
+.addComment {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  padding: 1.5em 1.25em;
+}
+
+.commentText {
+  color: #8e8e8e;
+}
+
+.postText {
+  color: #8e8e8e;
+}
+
+.cardMenu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.interactions {
+    /* display: flex; */
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.int-icon {
+  margin-right: 1em;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.commentContainer {
+  display: flex;
+  padding-left: 1.5em;
+  font-size: 0.75em;
+  margin-bottom: 0.4em;
+}
+
+.comment {
+  margin-left: 0.5em;
+}
+
+.accountNamePost {
+  font-weight: 600;
+}
